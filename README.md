@@ -137,12 +137,4 @@ This project is licensed under the MIT License.
 
 * [LinkedIn](https://www.linkedin.com/in/saksham832005)
 * [Email](mailto:saksham832005@gmail.com)
-
-```
-
-👉 Once you deploy, just replace:  
-- `https://your-deployment-link.com` with your **Vercel/Netlify/Render** link.  
-- `https://youtube.com/your-demo-link` with your **YouTube walkthrough** (if you make one).  
-
-Do you want me to also **add GitHub shields (stars, forks, issues, PRs)** so it looks like a professional open-source repo?
 ```
