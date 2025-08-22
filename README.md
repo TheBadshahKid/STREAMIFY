@@ -44,7 +44,7 @@ Streamify is a **full-stack music streaming web application** inspired by Spotif
 
 **Authentication:**  
 - JWT & bcrypt  
-
+- Clerk
 ---
 
 ## 📂 Project Structure  
