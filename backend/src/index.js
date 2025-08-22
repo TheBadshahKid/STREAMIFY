@@ -22,7 +22,9 @@ const __dirname = path.resolve();
 
 app.use(express.json());//to parse incoming JSON requests like req.body
 
-app.use(clerkMiddleware());// this will add auth to req obj => req.auth.userId
+app.use(clerkMiddleware({
+    apiKey: process.env.CLERK_SECRET_KEY,
+}));// this will add auth to req obj => req.auth.userId
 
 app.use(fileUpload({
     useTempFiles: true,
@@ -31,6 +33,10 @@ app.use(fileUpload({
     limits: { fileSize: 10 * 1024 * 1024 }, // 10 MB limit
 }));
 
+// error handler
+app.use((err, req, res, next) => {
+	res.status(500).json({ message: process.env.NODE_ENV === "production" ? "Internal server error" : err.message });
+});
 
 
 
