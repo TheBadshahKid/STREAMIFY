@@ -3,7 +3,8 @@ import { Router } from "express";
 const router = Router();
 
 router.get("/", (req, res) => {
-  res.send('User route with GET method');
+  const userId = req.auth.userId;
+  res.send(`User route with GET method for user ${userId}`);
 });
 
 export default router;
