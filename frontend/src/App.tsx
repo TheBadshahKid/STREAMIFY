@@ -1,16 +1,14 @@
-import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
-import { Button } from './components/ui/button';
+import { Routes, Route } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 export default function App() {
   return (
-    <header>
-      <SignedOut>
-        <SignInButton>
-          <Button variant="outline">Sign In</Button>
-        </SignInButton>
-      </SignedOut>
-      <SignedIn>
-        <UserButton />
-      </SignedIn>
-    </header>
+    <>
+      <Routes>
+        <Route path='/auth-callback' element={<AuthCallbackPage />} />
+        <Route path='/' element={<HomePage />} />
+      </Routes>
+      <Toaster />
+    </>
   );
 }
+					
