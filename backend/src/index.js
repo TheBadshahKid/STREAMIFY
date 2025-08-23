@@ -11,7 +11,7 @@ import albumRoutes from "./routes/album.route.js";
 import statsRoutes from "./routes/stat.route.js";
 import fileUpload from "express-fileupload"
 import path from "path";
-
+import cors from "cors";
 
 
 dotenv.config();
@@ -19,6 +19,14 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT;
 const __dirname = path.resolve();
+
+
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+    credentials: true,
+  })
+);
 
 app.use(express.json());//to parse incoming JSON requests like req.body
 
