@@ -22,9 +22,15 @@ const __dirname = path.resolve();
 
 app.use(express.json());//to parse incoming JSON requests like req.body
 
-app.use(clerkMiddleware({
-    apiKey: process.env.CLERK_SECRET_KEY,
-}));// this will add auth to req obj => req.auth.userId
+
+
+
+if (!process.env.CLERK_PUBLISHABLE_KEY || !process.env.CLERK_SECRET_KEY) {
+  throw new Error("❌ Clerk keys are missing from .env file");
+}
+
+
+app.use(clerkMiddleware());// this will add auth to req obj => req.auth.userId
 
 app.use(fileUpload({
     useTempFiles: true,
