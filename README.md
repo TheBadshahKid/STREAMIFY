@@ -1,3 +1,4 @@
+![streamify](https://github.com/user-attachments/assets/363b472e-5eae-42a1-942f-f37616b7eb85)
 
 # 🎵 Streamify – Advanced Spotify Clone  
 
