@@ -33,6 +33,7 @@ Streamify is a **full-stack music streaming web application** inspired by Spotif
 - React.js (Hooks, Context API)  
 - Tailwind CSS / Styled Components
 - TypeScript
+- ShadCN 
 
 **Backend:**  
 - Node.js  
@@ -42,7 +43,6 @@ Streamify is a **full-stack music streaming web application** inspired by Spotif
 
 **Database:**  
 - MongoDB / SQL (user data, songs, playlists)  
-
 **Authentication:**  
 - Clerk
 ---
