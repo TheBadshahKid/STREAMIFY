@@ -1,6 +1,6 @@
 ![streamify](https://github.com/user-attachments/assets/363b472e-5eae-42a1-942f-f37616b7eb85)
 
-# 🎵 Streamify – Advanced Spotify Clone  
+# 🎵 Streamify - MUSIC IS THERAPY
 
 [![React](https://img.shields.io/badge/Frontend-React.js-61DBFB?logo=react&logoColor=white)](https://reactjs.org/)  
 [![Node.js](https://img.shields.io/badge/Backend-Node.js-43853D?logo=node.js&logoColor=white)](https://nodejs.org/)  
