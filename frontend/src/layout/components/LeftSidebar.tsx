@@ -1,18 +1,12 @@
-import { SignedIn } from "@clerk/clerk-react";
-
-import { HomeIcon, Library, MessageCircle } from "lucide-react";
-//import { Album,Song } from "@/types";
-
-import { Link } from "react-router-dom";
-
 import PlaylistSkeleton from "@/components/skeletons/PlaylistSkeleton";
 import { buttonVariants } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { cn } from "@/lib/utils";
 import { useMusicStore } from "@/stores/useMusicStore";
-
+import { SignedIn } from "@clerk/clerk-react";
+import { HomeIcon, Library, MessageCircle } from "lucide-react";
 import { useEffect } from "react";
-
+import { Link } from "react-router-dom";
 
 const LeftSidebar = () => {
 	const { albums, fetchAlbums, isLoading } = useMusicStore();
@@ -90,7 +84,7 @@ const LeftSidebar = () => {
 										<p className='text-sm text-zinc-400 truncate'>Album • {album.artist}</p>
 									</div>
 								</Link>
-								))
+							))
 						)}
 					</div>
 				</ScrollArea>
