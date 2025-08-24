@@ -12,7 +12,7 @@ Streamify is a **full-stack music streaming web application** inspired by Spotif
 ---
 
 ## 🎬 Demo  
-🚀 **Live Demo:** [Streamify on Vercel](https://your-deployment-link.com)  
+🚀 **Live Demo:** [Streamify on Render](https://streamify-pjgx.onrender.com/)  
 
 ---
 
@@ -43,7 +43,6 @@ Streamify is a **full-stack music streaming web application** inspired by Spotif
 - MongoDB / SQL (user data, songs, playlists)  
 
 **Authentication:**  
-- JWT & bcrypt  
 - Clerk
 ---
 
